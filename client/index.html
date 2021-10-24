@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Block Explorer</title>
+</head>
+<body>
+    <h1>Block explorer</h1>
+    <div>
+        <label for="network">Choose network</label>
+        <select id="network" name="network">
+            <option value="Mainnet" selected>Mainnet</option>
+            <option value="Rinkeby">Rinkeby</option>
+            <option value="Ropsten">Ropsten</option>
+            <option value="Goerli">Goerli</option>
+            <option value="Kovan">Kovan</option>
+        </select>
+      </div>
+    <div id="insert-after-this-div">
+        <label for="search-by">Search by</label>
+        <select id="search-by" name="search-by">
+            <option value="Block number" selected>Block number</option>
+            <option value="Bloch hash">Block hash</option>
+            <option value="Transaction hash">Transaction hash</option>
+        </select>
+        <input type="text" id="search-input" value="latest">
+    <button type="button" id="button">Search</button>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
+
